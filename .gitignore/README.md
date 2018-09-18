@@ -1,2 +1,0 @@
-# learningscala
-learning-scala
