@@ -1,1 +1,28 @@
 
+1）类没有主体，可以不写空的花括号
+2）scala编译器会把类内部的不是字段，也不是方法的代码放在主构造器中。
+3）默认toString 方法继承了object
+4)对构造器参数的限制，可以通过require（Boolean b）方法，进行合法性检查.
+5)scala的赋值语句的结果只能是Unit值（），如 line = readLine()  返回值为unit () 而 java 是被赋的值；
+6）for( i <- 0 to 10)      for （ i <- 0 until 10 ）
+7)过滤for (i <- 0 to 10 if i%2== 0) println(i); 如果if 多于一个，则之间用；分隔；
+8）嵌套循环，多个 <-
+9) 滤间变量
+10）for () 可以使用 for {} 代替，{} 的好处是可以省略使用小括号必须加的分号.
+11)for {子句} yield {循环体}
+12) scala 与java 的不同之处,scala 允许在嵌套范围定义同名变量。
+13）本地函数 ：java 使用private 私有化， scala 可以使用private ,也可以在一个方法中，定义另外一个方法。嵌套的方法可以直接使用外部方法中的参数；
+
+14）函数字面量 var increase = ( x :Int ) => x + 1 调用 increase(10)
+    如果执行多个语句 var increase = (x :Int ) => {
+        语句1
+        语句2
+        ...   //最后一个语句的计算值为返回值。
+
+    }
+
+15）foreach ()  filter() //都是通过传入一个函数作为参数。
+16）
+
+
+
