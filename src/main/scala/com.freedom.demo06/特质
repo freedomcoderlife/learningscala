@@ -1,0 +1,18 @@
+1) 类默认继承了AnyRef;
+2)访问统一原则:scala的字段和方法属于相同的命名空间，这让字段可以重写无参数方法。
+3）scala里禁止同一个类中使用同样的名称定义字段和方法。
+4）要想调用超类的构造器，只需要把参数列表放在超类的类名后的括号中。
+5）scala:子类重写可父类具体的成员必须要写override 修饰符。
+   如果是，实现同名的抽象成员时，可以选择。
+   如果，不是重写或者实现，则禁止使用override修饰符。
+6）防止子类重写方法，可以在方法前定义final，如果保证类不会有子类，就把类定义成final的。
+7）scala的层级，any是所有其他类的超类,nothing 是所有其他类的子类。
+   any的两个子类 anyval 和anyref
+   any里面的方法: ==  != equals hashcode toString
+   anyval  : Byte Short Long Int Float Double Boolean Char 和 Unit 都定成final的了.
+   Unit 的实例只有一个为();
+   各类型的转换通过隐式转换进行.
+
+8)Null类是null引用对象的类型,它是每个引用类的子类,Null不兼容值类型.
+9)Nothing是任何类型的子类型。
+
